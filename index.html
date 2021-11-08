@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://quizchecks.com/wp-content/uploads/2019/09/favicon-quizchecks.png.pagespeed.ce.KQtS6LiY1E.png">
+    <title>Coding Quiz Challenge</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+    </style>
 </head>
+
 <body>
-    
+    <section class="viewScoreBoard">
+        <button id="viewBoardBtn" class="viewBoardBtn">View Score Board</button>
+    </section>
+
+    <section class="quizIntro">
+        <h1 class="quizTitle">
+            Coding Quiz Challenge
+        </h1>
+
+        <p class="quizIntroText">
+            This quiz will test your knowledge in coding. Answer the following questions within the time limit. Keep in mind that incorrect answer will penalise your time by 10 sec.
+        </p>
+        
+    </section>
+
+    <section class="startButton">
+        <button id="startQuizBtn" class="startQuizBtn">Start Quiz</button>
+    </section>
+
+    <section class="countDownBlock">
+        <p>You have <span></span>seconds left</p>
+    </section>
+
+    <section class="previousResult">
+        <p class="previousResultText"></p>
+    </section>
+
+    <section class="question">
+        <p>Question <span class="questionNumber"></span>: <span class="questionContent"></span></p>
+    </section>
+
+    <section class="answer">
+        <ul class="answerList">
+
+            <li> <button id="answer1" class="answer">Question 1</button>
+            </li>
+
+            <li> <button id="answer2" class="answer">Question 2</button>
+            </li>
+
+            <li> <button id="answer3" class="answer">Question 3</button>
+            </li>
+
+            <li> <button id="answer4" class="answer">Question 4</button>
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="backToMain">
+        <button id="backToMainBtn" class="backToMainBtn">Back to main Page</button>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>

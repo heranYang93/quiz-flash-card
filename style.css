@@ -1,0 +1,131 @@
+
+/* ===================== Default setting ======================== */
+
+/* declaring variables for the consistency of the format */
+:root {
+    --valhalla:  #2C2E43;
+    --mulledWine: #595260;
+    --ghost: #B2B1B9;
+    --sunglow: #FFD523;
+}
+
+/* set-up default margin, padding, font and color */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font: 16px;
+    color:var(--mulledWine);
+}
+
+/* The children element within body should be flexible*/
+body{
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    height:100vh;
+    background-color:white;
+}
+
+/* ===================== Default setting ======================== */
+
+.viewScoreBoard{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+
+    width: 80%;
+    height:10%;
+    padding: 0;
+
+}
+
+.viewBoardBtn{
+
+    width: 100%;
+    height:100%;
+    opacity: 1;
+    display:block;
+    transition: .3s ease-in;
+    backface-visibility:hidden;
+    background-color: red;
+    z-index:-1;
+
+    font-size: 150%;
+
+    /* Reset default drop shadow effect by changing the border */
+    border: none;
+    
+    /* Set the text color here */
+    color: black;
+
+}
+
+.viewBoardBtn:hover{
+    /* How this button will transit? reset this background color */
+    background-color: blue;
+    opacity: 0.5;
+    z-index:-1;
+}
+
+.quizIntro{
+    width: 75%;
+    margin-bottom: 5%;
+}
+
+.quizTitle{
+    font-size:200%;
+    text-align: center;
+    color: var(--sunglow);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid red;
+}
+
+.quizIntroText{
+    font-size:80%;
+    text-align: left;
+    color: var(--mulledWine);
+}
+
+.startButton{
+
+    width:150px;
+    height:150px;
+
+}
+
+.startQuizBtn{
+
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    opacity: 1;
+    display:block;
+    transition: .3s ease-in;
+    backface-visibility:hidden;
+    background-color: red;
+    z-index:-1;
+
+    font-size: 150%;
+
+    /* Reset default drop shadow effect by changing the border */
+    border: none;
+    
+    /* Set the text color here */
+    color: black;
+
+}
+
+.startQuizBtn:hover{
+    /* How this button will transit? reset this background color */
+    background-color: blue;
+    opacity: 0.5;
+    z-index:-1;
+}
