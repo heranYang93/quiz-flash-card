@@ -9,6 +9,8 @@
     --sunglow: #FFD523;
 }
 
+
+
 /* set-up default margin, padding, font and color */
 *{
     margin: 0;
@@ -34,11 +36,11 @@ body{
 
 /* ===================== Default setting ======================== */
 
-.viewScoreBoard{
+.viewScoreBoardBlock{
 
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 
     width: 80%;
     height:10%;
@@ -74,7 +76,7 @@ body{
     z-index:-1;
 }
 
-.quizIntro{
+.quizIntroBlock{
     width: 75%;
     margin-bottom: 5%;
 }
@@ -94,7 +96,7 @@ body{
     color: var(--mulledWine);
 }
 
-.startButton{
+.startButtonBlock{
 
     width:150px;
     height:150px;
@@ -124,6 +126,89 @@ body{
 }
 
 .startQuizBtn:hover{
+    /* How this button will transit? reset this background color */
+    background-color: blue;
+    opacity: 0.5;
+    z-index:-1;
+}
+
+.countDownBlock{
+    background-color: aqua;
+    width:120px;
+    height:120px;
+    text-align: center;;
+    font-size: 60%;
+    flex-wrap: wrap;
+}
+
+.residualTime{
+    margin-top: 10%;
+    font-size: 500%;
+}
+
+.previousResultBlock{
+    height:5%;
+    width:60%;
+    margin: 1%;
+    background-color: #2C2E43;
+}
+
+.questionBlock{
+    padding: 0%;
+    margin: 1%;
+    width: 60%;
+}
+
+.answerBlock{
+    padding: 0%;
+    width: 60%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.answerList{
+    list-style: none;
+}
+
+.backToMainBlock{
+    position: absolute;
+    bottom: 0%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+
+    width: 25%;
+    height:8%;
+    padding: 0;
+
+}
+
+.backToMainBtn{
+
+    width: 100%;
+    height:100%;
+    opacity: 1;
+    display:block;
+    transition: .3s ease-in;
+    backface-visibility:hidden;
+    background-color: red;
+    z-index:-1;
+
+    font-size: 100%;
+
+    /* Reset default drop shadow effect by changing the border */
+    border: none;
+    
+    /* Set the text color here */
+    color: black;
+
+}
+
+.backToMainBtn:hover{
     /* How this button will transit? reset this background color */
     background-color: blue;
     opacity: 0.5;
