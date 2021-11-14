@@ -9,8 +9,6 @@
     --sunglow: #FFD523;
 }
 
-
-
 /* set-up default margin, padding, font and color */
 *{
     margin: 0;
@@ -36,6 +34,7 @@ body{
 
 /* ===================== Default setting ======================== */
 
+/* WRAPPER - show score board button */
 .viewScoreBoardBlock{
 
     margin-left: 10%;
@@ -48,6 +47,7 @@ body{
 
 }
 
+/* BUTTON - show score board button */
 .viewBoardBtn{
 
     width: 100%;
@@ -69,6 +69,7 @@ body{
 
 }
 
+/* BUTTON effect - show score board button */
 .viewBoardBtn:hover{
     /* How this button will transit? reset this background color */
     background-color: blue;
@@ -76,11 +77,13 @@ body{
     z-index:-1;
 }
 
+/* WRAPPER - quiz introduction block */
 .quizIntroBlock{
     width: 75%;
     margin-bottom: 5%;
 }
 
+/* content - quiz title */
 .quizTitle{
     font-size:200%;
     text-align: center;
@@ -90,21 +93,21 @@ body{
     border-bottom: 1px solid red;
 }
 
+/* content - quiz introduction */
 .quizIntroText{
     font-size:80%;
     text-align: left;
     color: var(--mulledWine);
 }
 
+/* WRAPPER - start button */
 .startButtonBlock{
-
     width:150px;
     height:150px;
-
 }
 
+/* BUTTON - a button to start the quiz */
 .startQuizBtn{
-
     width:100%;
     height:100%;
     border-radius: 50%;
@@ -125,6 +128,7 @@ body{
 
 }
 
+/* BUTTON effect - show score board button */
 .startQuizBtn:hover{
     /* How this button will transit? reset this background color */
     background-color: blue;
@@ -132,6 +136,7 @@ body{
     z-index:-1;
 }
 
+/* WRAPPER - countdown block - how many seconds until the end of the world */
 .countDownBlock{
     background-color: aqua;
     width:120px;
@@ -141,11 +146,13 @@ body{
     flex-wrap: wrap;
 }
 
+/* content - how many seconds until the end of the world */
 .residualTime{
     margin-top: 10%;
     font-size: 500%;
 }
 
+/* WRAPPER - show your previous result */
 .previousResultBlock{
     height:5%;
     width:60%;
@@ -153,12 +160,14 @@ body{
     background-color:azure;
 }
 
+/* WRAPPER - question */
 .questionBlock{
     padding: 0%;
     margin: 1%;
     width: 60%;
 }
 
+/* WRAPPER - answers */
 .answerBlock{
     padding: 0%;
     width: 60%;
@@ -169,10 +178,12 @@ body{
     align-items: flex-start;
 }
 
+/* content - a list of choices you can select from */
 .answerList{
     list-style: none;
 }
 
+/* wrapper - bottom button to go back to the main block */
 .backToMainBlock{
     position: absolute;
     bottom: 0%;
@@ -184,9 +195,9 @@ body{
     width: 25%;
     height:8%;
     padding: 0;
-
 }
 
+/* BUTTON - bottom button to go back to the main block */
 .backToMainBtn{
 
     width: 100%;
@@ -208,6 +219,7 @@ body{
 
 }
 
+/* BUTTON effect - bottom button to go back to the main block */
 .backToMainBtn:hover{
     /* How this button will transit? reset this background color */
     background-color: blue;
@@ -215,6 +227,7 @@ body{
     z-index:-1;
 }
 
+/* content - history score board */
 .scoreHistory{
     /* Get rid of the list style */
     list-style: none;
