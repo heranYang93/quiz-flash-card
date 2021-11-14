@@ -150,7 +150,7 @@ body{
     height:5%;
     width:60%;
     margin: 1%;
-    background-color: #2C2E43;
+    background-color:azure;
 }
 
 .questionBlock{
@@ -213,4 +213,9 @@ body{
     background-color: blue;
     opacity: 0.5;
     z-index:-1;
+}
+
+.scoreHistory{
+    /* Get rid of the list style */
+    list-style: none;
 }
