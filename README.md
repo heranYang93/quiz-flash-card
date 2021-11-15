@@ -2,12 +2,32 @@
 - [ADDITIONAL] This stands for additional requirement that I personally regard necessary for a smooth user experience
 
 # Table of Contents
+    [Key Demo]
     [Project title]
     [Task description]
     [User Story]
     [Acceptance Criteria]
     [Reference]
     [Repository structure]
+
+# Key Demo
+These gifs are made to demostrate key features:
+
+### Basic features demostration
+    (./assets/basicFunction.gif)
+    Functional start button
+    Answer and rendering next question
+    Time penalty
+    FInal result visualisation
+    Data Storage
+
+### Special features demonstration
+    (./assets/specialFeature.gif)
+    (./assets/navigationAndBetween-pageResetting.gif)
+    The quiz can now be interrupted at anytime
+    Users can now navigate back to the main menu during the quiz
+    Users can now navigate to view score board during the quiz
+    Users can now navigate tp score board from the main page
 
 # Project title
 A multiple-choice quiz template
