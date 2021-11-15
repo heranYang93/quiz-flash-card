@@ -29,19 +29,19 @@ body{
     padding-left: 10%;
     padding-right: 10%;
     height:100vh;
-    background-color:white;
+    background-color:var(--ghost);
 }
 
 /* ===================== Default setting ======================== */
 
 /* WRAPPER - show score board button */
 .viewScoreBoardBlock{
-
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 1%;
 
-    width: 80%;
+    width: 70%;
     height:10%;
     padding: 0;
 
@@ -51,35 +51,44 @@ body{
 .viewBoardBtn{
 
     width: 100%;
-    height:100%;
-    opacity: 1;
+    height: 50px;
+
+    border-radius: 25px;
+    background-color: var(--mulledWine);
+    color: var(--valhalla);
+    
+    opacity: 0.7;
     display:block;
     transition: .3s ease-in;
     backface-visibility:hidden;
-    background-color: red;
     z-index:-1;
 
-    font-size: 150%;
+    font-size: 100%;
+    font-weight: 100;
 
     /* Reset default drop shadow effect by changing the border */
-    border: none;
+    border: 5px solid var(--valhalla);
     
     /* Set the text color here */
     color: black;
+    font-weight: 500;
 
 }
 
 /* BUTTON effect - show score board button */
 .viewBoardBtn:hover{
     /* How this button will transit? reset this background color */
-    background-color: blue;
-    opacity: 0.5;
+    background: var(--valhalla);
+    border: 5px solid var(--sunglow);
+    color: var(--sunglow);
+    font-weight: 500;
+    opacity: 1;
     z-index:-1;
 }
 
 /* WRAPPER - quiz introduction block */
 .quizIntroBlock{
-    width: 75%;
+    width: 70%;
     margin-bottom: 5%;
 }
 
@@ -90,14 +99,15 @@ body{
     color: var(--sunglow);
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--valhalla);
 }
 
 /* content - quiz introduction */
 .quizIntroText{
     font-size:80%;
     text-align: left;
-    color: var(--mulledWine);
+    color: var(--valhalla);
+    font-weight: 700;
 }
 
 /* WRAPPER - start button */
@@ -115,13 +125,13 @@ body{
     display:block;
     transition: .3s ease-in;
     backface-visibility:hidden;
-    background-color: red;
+    background-color: var(--mulledWine);
     z-index:-1;
-
+    opacity: 0.7;
     font-size: 150%;
 
     /* Reset default drop shadow effect by changing the border */
-    border: none;
+    border: 5px solid var(--valhalla);
     
     /* Set the text color here */
     color: black;
@@ -131,14 +141,17 @@ body{
 /* BUTTON effect - show score board button */
 .startQuizBtn:hover{
     /* How this button will transit? reset this background color */
-    background-color: blue;
-    opacity: 0.5;
+    border: 5px solid var(--sunglow);
+    background-color: var(--valhalla);
+    color: var(--sunglow);
+    opacity: 1;
     z-index:-1;
 }
 
 /* WRAPPER - countdown block - how many seconds until the end of the world */
 .countDownBlock{
-    background-color: aqua;
+    background-color: var(--ghost);
+    font-weight: 500;
     width:120px;
     height:120px;
     text-align: center;;
@@ -149,7 +162,9 @@ body{
 /* content - how many seconds until the end of the world */
 .residualTime{
     margin-top: 10%;
-    font-size: 500%;
+    font-size: 600%;
+    font-weight: 700;
+    color:var(--sunglow);
 }
 
 /* WRAPPER - show your previous result */
@@ -157,7 +172,13 @@ body{
     height:5%;
     width:60%;
     margin: 1%;
-    background-color:azure;
+    background-color:var(--ghost);
+    font-weight: 500;
+}
+
+.previousResultText{
+    text-align: center;
+    color: var(--valhalla);
 }
 
 /* WRAPPER - question */
@@ -165,6 +186,8 @@ body{
     padding: 0%;
     margin: 1%;
     width: 60%;
+    font-weight: 500;
+    color: var(--valhalla);
 }
 
 /* WRAPPER - answers */
@@ -201,29 +224,38 @@ body{
 .backToMainBtn{
 
     width: 100%;
-    height:100%;
-    opacity: 1;
+    height: 50px;
+
+    border-radius: 25px;
+    background-color: var(--mulledWine);
+    color: var(--valhalla);
+    
+    opacity: 0.7;
     display:block;
     transition: .3s ease-in;
     backface-visibility:hidden;
-    background-color: red;
     z-index:-1;
 
     font-size: 100%;
+    font-weight: 100;
 
     /* Reset default drop shadow effect by changing the border */
-    border: none;
+    border: 5px solid var(--valhalla);
     
     /* Set the text color here */
     color: black;
+    font-weight: 500;
 
 }
 
 /* BUTTON effect - bottom button to go back to the main block */
 .backToMainBtn:hover{
     /* How this button will transit? reset this background color */
-    background-color: blue;
-    opacity: 0.5;
+    background: var(--valhalla);
+    border: 5px solid var(--sunglow);
+    color: var(--sunglow);
+    font-weight: 500;
+    opacity: 1;
     z-index:-1;
 }
 
@@ -231,4 +263,99 @@ body{
 .scoreHistory{
     /* Get rid of the list style */
     list-style: none;
+}
+
+.singleAnswerBtn {
+    margin: 10px;
+    padding-left: 10px;
+    text-align: start;
+
+    width: 100%;
+    height: 30px;
+
+    background-color: var(--mulledWine);
+    color: var(--valhalla);
+    
+    display:block;
+    transition: .3s ease-in;
+    backface-visibility:hidden;
+    z-index:-1;
+
+    font-size: 100%;
+    font-weight: 100;
+
+    /* Reset default drop shadow effect by changing the border */
+    border: none;
+    
+    /* Set the text color here */
+    color: var(--sunglow);
+    font-weight: 300;
+}
+
+.singleAnswerBtn:hover{
+    /* How this button will transit? reset this background color */
+    background: var(--sunglow);
+    color: var(--valhalla);
+    opacity: 1;
+    z-index:-1;
+}
+
+.thisResultBlock{
+    padding: 0%;
+    width: 60%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.thisResultBlock > * {
+    margin: 5px;
+}
+
+#submitName {
+    margin: 10px;
+    padding-left: 10px;
+    text-align: start;
+
+    width: 100%;
+    height: 30px;
+
+    background-color: var(--mulledWine);
+    color: var(--valhalla);
+    
+    display:block;
+    transition: .3s ease-in;
+    backface-visibility:hidden;
+    z-index:-1;
+
+    font-size: 100%;
+    font-weight: 100;
+
+    /* Reset default drop shadow effect by changing the border */
+    border: none;
+    
+    /* Set the text color here */
+    color: var(--sunglow);
+    font-weight: 300;
+}
+
+#submitName:hover{
+    /* How this button will transit? reset this background color */
+    background: var(--sunglow);
+    color: var(--valhalla);
+    opacity: 1;
+    z-index:-1;
+}
+
+.scoreBoardTitle{
+    margin: 20px;
+    font-size:200%;
+    text-align: center;
+    color: var(--sunglow);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--valhalla);
 }

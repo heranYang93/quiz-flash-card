@@ -38,7 +38,7 @@ const questionArray =[
     }
 ]
 
-const previousResultPrompt = ['Correct!','Wrong!']   // Last answer prompt
+const previousResultPrompt = ['Well done, that was Correct!','Sorry, that was incorrect!']   // Last answer prompt
 var timer = 30              // Total time (in second)
 const timePenalty = -10      // Wrong answer time penalty
 const scorePenalty = -2     // Wrong answer score penalty
