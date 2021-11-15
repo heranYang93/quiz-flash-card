@@ -29,7 +29,7 @@ body{
     padding-left: 10%;
     padding-right: 10%;
     height:100vh;
-    background-color:var(--ghost);
+    background-color:var(--valhalla);
 }
 
 /* ===================== Default setting ======================== */
@@ -54,10 +54,9 @@ body{
     height: 50px;
 
     border-radius: 25px;
-    background-color: var(--mulledWine);
-    color: var(--valhalla);
+    background-color: var(--valhalla);
     
-    opacity: 0.7;
+    opacity: 1;
     display:block;
     transition: .3s ease-in;
     backface-visibility:hidden;
@@ -67,11 +66,10 @@ body{
     font-weight: 100;
 
     /* Reset default drop shadow effect by changing the border */
-    border: 5px solid var(--valhalla);
+    border: 1px solid var(--ghost);
     
     /* Set the text color here */
-    color: black;
-    font-weight: 500;
+    color: var(--ghost);
 
 }
 
@@ -79,9 +77,9 @@ body{
 .viewBoardBtn:hover{
     /* How this button will transit? reset this background color */
     background: var(--valhalla);
-    border: 5px solid var(--sunglow);
+    border: 1px solid var(--sunglow);
     color: var(--sunglow);
-    font-weight: 500;
+    font-weight: 100;
     opacity: 1;
     z-index:-1;
 }
@@ -106,8 +104,8 @@ body{
 .quizIntroText{
     font-size:80%;
     text-align: left;
-    color: var(--valhalla);
-    font-weight: 700;
+    color: var(--ghost);
+    font-weight: 300;
 }
 
 /* WRAPPER - start button */
@@ -121,20 +119,20 @@ body{
     width:100%;
     height:100%;
     border-radius: 50%;
-    opacity: 1;
+    opacity:1;
     display:block;
     transition: .3s ease-in;
     backface-visibility:hidden;
     background-color: var(--mulledWine);
     z-index:-1;
-    opacity: 0.7;
     font-size: 150%;
 
     /* Reset default drop shadow effect by changing the border */
-    border: 5px solid var(--valhalla);
+    border: 5px solid var(--ghost);
     
     /* Set the text color here */
-    color: black;
+    color: var(--sunglow);
+    font-weight: 500;
 
 }
 
@@ -146,11 +144,12 @@ body{
     color: var(--sunglow);
     opacity: 1;
     z-index:-1;
+    font-weight:900;
 }
 
 /* WRAPPER - countdown block - how many seconds until the end of the world */
 .countDownBlock{
-    background-color: var(--ghost);
+    background-color: var(--sunglow);
     font-weight: 500;
     width:120px;
     height:120px;
@@ -164,7 +163,7 @@ body{
     margin-top: 10%;
     font-size: 600%;
     font-weight: 700;
-    color:var(--sunglow);
+    color:var(--valhalla);
 }
 
 /* WRAPPER - show your previous result */
@@ -172,13 +171,14 @@ body{
     height:5%;
     width:60%;
     margin: 1%;
-    background-color:var(--ghost);
+    background-color:var(--valhalla);
     font-weight: 500;
 }
 
 .previousResultText{
     text-align: center;
-    color: var(--valhalla);
+    color: var(--sunglow);
+    font-weight: 300;
 }
 
 /* WRAPPER - question */
@@ -187,7 +187,10 @@ body{
     margin: 1%;
     width: 60%;
     font-weight: 500;
-    color: var(--valhalla);
+}
+
+.questionBlock * {
+    color: var(--sunglow);
 }
 
 /* WRAPPER - answers */
@@ -227,10 +230,10 @@ body{
     height: 50px;
 
     border-radius: 25px;
-    background-color: var(--mulledWine);
-    color: var(--valhalla);
+    background-color: var(--valhalla);
+    color: var(--ghost);
     
-    opacity: 0.7;
+    opacity: 1;
     display:block;
     transition: .3s ease-in;
     backface-visibility:hidden;
@@ -240,11 +243,10 @@ body{
     font-weight: 100;
 
     /* Reset default drop shadow effect by changing the border */
-    border: 5px solid var(--valhalla);
+    border: 1px solid var(--ghost);
     
     /* Set the text color here */
-    color: black;
-    font-weight: 500;
+    font-weight: 300;
 
 }
 
@@ -252,9 +254,9 @@ body{
 .backToMainBtn:hover{
     /* How this button will transit? reset this background color */
     background: var(--valhalla);
-    border: 5px solid var(--sunglow);
+    border: 1px solid var(--sunglow);
     color: var(--sunglow);
-    font-weight: 500;
+    font-weight: 100;
     opacity: 1;
     z-index:-1;
 }
@@ -306,19 +308,32 @@ body{
     margin: 1%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
 }
 
-.thisResultBlock > * {
-    margin: 5px;
+.thisResultBlock * {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    color: var(--ghost);
+    font-weight: 500;
+}
+
+.lastResult{
+    font-size: 500%;
+    font-weight: 600;
+    color: var(--sunglow);
+}
+
+.inputArea{
+    width: 100%;
 }
 
 #submitName {
+
     margin: 10px;
     padding-left: 10px;
-    text-align: start;
+    text-align: center;
 
     width: 100%;
     height: 30px;
@@ -339,7 +354,7 @@ body{
     
     /* Set the text color here */
     color: var(--sunglow);
-    font-weight: 300;
+    font-weight: 100;
 }
 
 #submitName:hover{
@@ -350,12 +365,25 @@ body{
     z-index:-1;
 }
 
+.historyDisplayBlock{
+    width: 50%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
 .scoreBoardTitle{
-    margin: 20px;
     font-size:200%;
     text-align: center;
     color: var(--sunglow);
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid var(--valhalla);
+    border-bottom: 1px solid var(--sunglow);
+}
+
+.scoreHistory *{
+    color: var(--ghost);
+    width: 80%;
+    font-size: 150%;
+    margin: 5px;
 }

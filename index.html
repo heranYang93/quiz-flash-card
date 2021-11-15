@@ -42,7 +42,7 @@
     </section>
 
     <section class="questionBlock">
-        <p>Question<span class="questionNumber"></span>: <span class="questionContent"></span></p>
+        <p>Question <span class="questionNumber"></span>: <span class="questionContent"></span></p>
     </section>
 
     <section class="answerBlock">
@@ -50,16 +50,18 @@
     </section>
 
     <section class="thisResultBlock">
-        <p>Well done! You have scored : <span class="lastResult"></span> points</p>
-        <label for="">Insert your initials:</label>
-        <br>
-        <input type="text" id="initialInput" name="" placeholder="AB">
-        <br>
-        <button type="submit" id='submitName'>Submit</button>
+        <div>Well done! You have scored :</div>
+        <div class="lastResult"></div>
+        <div> points!</div>
+        <section class='inputArea'>
+            <label for="">Insert your initials:</label>
+            <input type="text" id="initialInput" name="" placeholder="AB">
+            <button type="submit" id='submitName'>Submit</button>
+        </section>
     </section>
 
     <section class="historyDisplayBlock">
-        <div clsss='scoreBoardTitle'>Scores</div>
+        <div class='scoreBoardTitle'>Highest Scores</div>
         <ul class='scoreHistory'>
             <!-- list of history scores to be created dynamically -->
         </ul>

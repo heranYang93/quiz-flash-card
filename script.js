@@ -344,7 +344,7 @@ function displayHistory(){
 
     for (i in recordList) {
         var singleRecordEntry = document.createElement('li');
-        singleRecordEntry.innerHTML = i + ' - ' + recordList[i].thisName + ' - ' + recordList[i].thisScore;
+        singleRecordEntry.innerHTML = '#' + (parseInt(i)+1) + ': ' + recordList[i].thisName + ' - Score: ' + recordList[i].thisScore + ' Pts';
         scoreHistoryEl.appendChild(singleRecordEntry)
     }
 
